@@ -1,0 +1,634 @@
+<div class="sheet-container">
+    <div class="sheet-row">
+        <h1 class="upper left">Fanhunter</h1>
+    </div>
+
+    <div class="sheet-row">
+        <h2 class="upper left">El juego de rol epicodecadente</h2>
+    </div>
+
+    <hr class="sheet-rule">
+
+    <div id="pj" class="sheet-1-2">
+        <div class="colum1">
+            <div id="imag"></div>
+        </div>
+        <div class="colum2">
+            <div class="sheet-2colrow">
+                <div class="sheet-col">
+                    <label class="upper">Nombre</label>
+                </div>
+                <div class="sheet-col">
+                    <input name="attr_character_name"type="text">
+                </div>
+                <div class="sheet-col">
+                    <label class="upper">Arquetipo</label>
+                </div>
+                <div class="sheet-col">
+                    <input name="attr_class"type="text">
+                </div>
+                <div class="sheet-col">
+                    <label class="upper">Edad</label>
+                </div>
+                <div class="sheet-col">
+                    <input name="attr_age"type="number">
+                </div>                                
+                <div class="sheet-col">
+                    <label class="upper">Sexo</label>
+                </div>
+                <div class="sheet-col">
+                    <input name="attr_sex"type="text">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="sheet-rule">
+
+    <div class="sheet-4colrow">
+        <div class="sheet-col">
+            <div class="sheet-row">
+                <div class="sheet-category upper">Combate
+                    <input name="attr_fight"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Fight}} {{die=[[@{fight}]]}} {{check=[[@{fight}d6]]}}"name="roll_FightCheck"/>
+                </div>
+                
+                <div class="">A. Marciales
+                    <input name="attr_fight_mar"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Martials}} {{die=[[@{fight_mar}]]}} {{check=[[@{fight_mar}d6]]}}"name="roll_MartialsCheck"/>
+                </div>
+
+                <div class="">Defensa
+                    <input name="attr_fight_def"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Defense}} {{die=[[@{fight_def}]]}} {{check=[[@{fight_def}d6]]}}"name="roll_DefenseCheck"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_maste_1"class="sheet-talent"placeholder="Maestria"type="text">
+                    <input name="attr_fight_mas_1"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Mastery1}} {{die=[[@{fight_mas_1}]]}} {{check=[[@{fight_mas_1}d6]]}}"name="roll_Mastery1Check"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_maste_2"class="sheet-talent"placeholder="Maestria"type="text">
+                    <input name="attr_fight_mas_2"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Mastery2}} {{die=[[@{fight_mas_2}]]}} {{check=[[@{fight_mas_2}d6]]}}"name="roll_Mastery2Check"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_maste_3"class="sheet-talent"placeholder="Maestria"type="text">
+                    <input name="attr_fight_mas_3"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Mastery3}} {{die=[[@{fight_mas_3}]]}} {{check=[[@{fight_mas_3}d6]]}}"name="roll_Mastery3Check"/>
+                </div>
+                <div class="upper peq">Maestria</div>
+            </div>
+        </div>
+        <div class="sheet-col">
+            <div class="sheet-row">
+                <div class="sheet-category upper">Disparo
+                    <input name="attr_shoot"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Shoot}} {{die=[[@{shoot}]]}} {{check=[[@{shoot}d6]]}}"name="roll_ShootCheck"/>
+                </div>
+
+                <div class="">Arrojar
+                    <input name="attr_shoot_tru"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Throw}} {{die=[[@{shoot_tru}]]}} {{check=[[@{shoot_tru}d6]]}}"name="roll_ThrowCheck"/>
+                </div>
+
+                <div class="">Explosivos
+                    <input name="attr_shoot_expl"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Explosive}} {{die=[[@{shoot_expl}]]}} {{check=[[@{shoot_expl}d6]]}}"name="roll_ExplosiveCheck"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_prec_1"class="sheet-talent"placeholder="Precision"type="text">
+                    <input name="attr_shoot_pre_1"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Precision1}} {{die=[[@{shoot_pre_1}]]}} {{check=[[@{shoot_pre_1}d6]]}}"name="roll_Precision1Check"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_prec_2"class="sheet-talent"placeholder="Precision"type="text">
+                    <input name="attr_shoot_pre_2"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Precision2}} {{die=[[@{shoot_pre_2}]]}} {{check=[[@{shoot_pre_2}d6]]}}"name="roll_Precision2Check"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_prec_3"class="sheet-talent"placeholder="Precision"type="text">
+                    <input name="attr_shoot_pre_3"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Precision3}} {{die=[[@{shoot_pre_3}]]}} {{check=[[@{shoot_pre_3}d6]]}}"name="roll_Precision3Check"/>
+                </div>
+                <div class="upper peq">Precision</div>
+            </div>
+        </div>
+        <div class="sheet-col">
+            <div class="sheet-row">
+                <div class="sheet-category upper">Musculo
+                    <input name="attr_muscl"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Muscle}} {{die=[[@{muscl}]]}} {{check=[[@{muscl}d6]]}}"name="roll_MuscleCheck"/>
+                </div>
+
+                <div class="">Atletismo
+                    <input name="attr_muscl_run"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Run}} {{die=[[@{muscl_run}]]}} {{check=[[@{muscl_run}d6]]}}"name="roll_RunCheck"/>
+                </div>
+
+                <div class="">Nadar
+                    <input name="attr_muscl_swim"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Swim}} {{die=[[@{muscl_swim}]]}} {{check=[[@{muscl_swim}d6]]}}"name="roll_SwimCheck"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_muscl_1"class="sheet-talent"placeholder="Montar"type="text">
+                    <input name="attr_muscl_mount_1"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Mount1}} {{die=[[@{muscl_mount_1}]]}} {{check=[[@{muscl_mount_1}d6]]}}"name="roll_Mount1Check"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_muscl_2"class="sheet-talent"placeholder="Montar"type="text">
+                    <input name="attr_muscl_mount_2"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Mount2}} {{die=[[@{muscl_mount_2}]]}} {{check=[[@{muscl_mount_2}d6]]}}"name="roll_Mount2Check"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_muscl_3"class="sheet-talent"placeholder="Montar"type="text">
+                    <input name="attr_muscl_mount_3"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Mount3}} {{die=[[@{muscl_mount_3}]]}} {{check=[[@{muscl_mount_3}d6]]}}"name="roll_Mount3Check"/>
+                </div>
+                <div class="upper peq">Montar</div>
+            </div>
+        </div>
+        <div class="sheet-col">
+            <div class="sheet-row">
+                <div class="sheet-category upper">Reflejos
+                    <input name="attr_reflex"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Drive}} {{die=[[@{reflex}]]}} {{check=[[@{reflex}d6]]}}"name="roll_DriveCheck"/>
+                </div>
+
+                <div class="">Manitas
+                    <input name="attr_reflex_man"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Repair}} {{die=[[@{reflex_man}]]}} {{check=[[@{reflex_man}d6]]}}"name="roll_RepairCheck"/>
+                </div>
+
+                <div class="">Sigilo
+                    <input name="attr_reflex_steal"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Stealth}} {{die=[[@{reflex_steal}]]}} {{check=[[@{reflex_steal}d6]]}}"name="roll_StealthCheck"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_drive_1"class="sheet-talent"placeholder="Conducir"type="text">
+                    <input name="attr_reflex_drive_1"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Drive1}} {{die=[[@{reflex_drive_1}]]}} {{check=[[@{reflex_drive_1}d6]]}}"name="roll_Drive1Check"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_drive_2"class="sheet-talent"placeholder="Conducir"type="text">
+                    <input name="attr_reflex_drive_2"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Drive2}} {{die=[[@{reflex_drive_2}]]}} {{check=[[@{reflex_drive_2}d6]]}}"name="roll_Drive2Check"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_drive_3"class="sheet-talent"placeholder="Conducir"type="text">
+                    <input name="attr_reflex_drive_3"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Drive3}} {{die=[[@{reflex_drive_3}]]}} {{check=[[@{reflex_drive_3}d6]]}}"name="roll_Drive3Check"/>
+                </div>
+                <div class="upper peq">Conducir</div>
+            </div>
+        </div>
+    </div>
+    <div class="sheet-4colrow">
+        <div class="sheet-col">
+            <div class="sheet-row">
+                <div class="sheet-category upper">Neuronas
+                    <input name="attr_neuron"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Neuron}} {{die=[[@{neuron}]]}} {{check=[[@{neuron}d6]]}}"name="roll_NeuronCheck"/>
+                </div>
+                
+                <div class="">Investigar
+                    <input name="attr_neuron_inv"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Researh}} {{die=[[@{neuron_inv}]]}} {{check=[[@{neuron_inv}d6]]}}"name="roll_ResearhCheck"/>
+                </div>
+
+                <div class="">Medicina
+                    <input name="attr_neuron_med"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Medicine}} {{die=[[@{neuron_med}]]}} {{check=[[@{neuron_med}d6]]}}"name="roll_MedicineCheck"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_cultur_1"class="sheet-talent"placeholder="Cultura"type="text">
+                    <input name="attr_neuron_cult_1"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Culture1}} {{die=[[@{neuron_cult_1}]]}} {{check=[[@{neuron_cult_1}d6]]}}"name="roll_Culture1Check"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_cultur_2"class="sheet-talent"placeholder="Cultura"type="text">
+                    <input name="attr_neuron_cult_2"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Culture2}} {{die=[[@{neuron_cult_2}]]}} {{check=[[@{neuron_cult_2}d6]]}}"name="roll_Culture2Check"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_cultur_3"class="sheet-talent"placeholder="Cultura"type="text">
+                    <input name="attr_neuron_cult_3"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Culture3}} {{die=[[@{neuron_cult_3}]]}} {{check=[[@{neuron_cult_3}d6]]}}"name="roll_Culture3Check"/>
+                </div>
+                <div class="upper peq">Cultura</div>
+            </div>
+        </div>
+        <div class="sheet-col">
+            <div class="sheet-row">
+                <div class="sheet-category upper">Agallas
+                    <input name="attr_guts"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Guts}} {{die=[[@{guts}]]}} {{check=[[@{guts}d6]]}}"name="roll_GutsCheck"/>
+                </div>
+
+                <div class="">Callejear
+                    <input name="attr_guts_wand"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Wander}} {{die=[[@{guts_wand}]]}} {{check=[[@{guts_wand}d6]]}}"name="roll_WanderCheck"/>
+                </div>
+
+                <div class="">Intimidar
+                    <input name="attr_guts_intim"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Intimidate}} {{die=[[@{guts_intim}]]}} {{check=[[@{guts_intim}d6]]}}"name="roll_IntimidateCheck"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_crime_1"class="sheet-talent"placeholder="Crimen"type="text">
+                    <input name="attr_guts_cri_1"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Crime1}} {{die=[[@{guts_cri_1}]]}} {{check=[[@{guts_cri_1}d6]]}}"name="roll_Crime1Check"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_crime_2"class="sheet-talent"placeholder="Crimen"type="text">
+                    <input name="attr_guts_cri_2"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Crime2}} {{die=[[@{guts_cri_2}]]}} {{check=[[@{guts_cri_2}d6]]}}"name="roll_Crime2Check"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_crime_3"class="sheet-talent"placeholder="Crimen"type="text">
+                    <input name="attr_guts_cri_3"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Crime3}} {{die=[[@{guts_cri_3}]]}} {{check=[[@{guts_cri_3}d6]]}}"name="roll_Crime3Check"/>
+                </div>
+                <div class="upper peq">Crimen</div>
+            </div>
+        </div>
+        <div class="sheet-col">
+            <div class="sheet-row">
+                <div class="sheet-category upper">Carisma
+                    <input name="attr_chari"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Charisma}} {{die=[[@{chari}]]}} {{check=[[@{chari}d6]]}}"name="roll_CharismaCheck"/>
+                </div>
+
+                <div class="">Comecocos
+                    <input name="attr_chari_obse"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Obsession}} {{die=[[@{chari_obse}]]}} {{check=[[@{chari_obse}d6]]}}"name="roll_ObsessionCheck"/>
+                </div>
+
+                <div class="">Farolear
+                    <input name="attr_chari_bluff"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Bluff}} {{die=[[@{chari_bluff}]]}} {{check=[[@{chari_bluff}d6]]}}"name="roll_BluffCheck"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_chari_1"class="sheet-talent"placeholder="Idioma"type="text">
+                    <input name="attr_chari_idiom_1"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Idiom1}} {{die=[[@{chari_idiom_1}]]}} {{check=[[@{chari_idiom_1}d6]]}}"name="roll_Idiom1Check"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_chari_2"class="sheet-talent"placeholder="Idioma"type="text">
+                    <input name="attr_chari_idiom_2"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Idiom2}} {{die=[[@{chari_idiom_2}]]}} {{check=[[@{chari_idiom_2}d6]]}}"name="roll_Idiom2Check"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_chari_3"class="sheet-talent"placeholder="Idioma"type="text">
+                    <input name="attr_chari_idiom_3"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Idiom3}} {{die=[[@{chari_idiom_3}]]}} {{check=[[@{chari_idiom_3}d6]]}}"name="roll_Idiom3Check"/>
+                </div>
+                <div class="upper peq">Idioma</div>
+            </div>
+        </div>
+        <div class="sheet-col">
+            <div class="sheet-row">
+                <div class="sheet-category upper">Empatia
+                    <input name="attr_empath"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Empathy}} {{die=[[@{empath}]]}} {{check=[[@{empath}d6]]}}"name="roll_EmpathyCheck"/>
+                </div>
+
+                <div class="">Observar
+                    <input name="attr_empath_obs"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Observe}} {{die=[[@{empath_obs}]]}} {{check=[[@{empath_obs}d6]]}}"name="roll_ObserveCheck"/>
+                </div>
+
+                <div class="">Psicologia
+                    <input name="attr_empath_psico"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Psicology}} {{die=[[@{empath_psico}]]}} {{check=[[@{empath_psico}d6]]}}"name="roll_PsicologyCheck"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_talent_1"class="sheet-talent"placeholder="Talento"type="text">
+                    <input name="attr_empath_talent_1"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Talent1}} {{die=[[@{empath_talent_1}]]}} {{check=[[@{empath_talent_1}d6]]}}"name="roll_Talent1Check"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_talent_2"class="sheet-talent"placeholder="Talento"type="text">
+                    <input name="attr_empath_talent_2"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Talent2}} {{die=[[@{empath_talent_2}]]}} {{check=[[@{empath_talent_2}d6]]}}"name="roll_Talent2Check"/>
+                </div>
+
+                <div class="">
+                    <input name="attr_talent_3"class="sheet-talent"placeholder="Talento"type="text">
+                    <input name="attr_empath_talent_3"type="number">
+                    <button type="roll"value="&amp;{template:fanhunter} {{name=Talent3}} {{die=[[@{empath_talent_3}]]}} {{check=[[@{empath_talent_3}d6]]}}"name="roll_Talent3Check"/>
+                </div>
+                <div class="upper peq">Talento</div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="sheet-rule">
+
+    <div class="sheet-3colrow">
+        <div class="sheet-col">
+            <div>
+                <label class="upper">Poderes</label>
+            </div>
+            <div class="">
+                <input name="attr_power_1"class="sheet-talent"placeholder="Poder"type="text">
+                <input name="attr_power_num_1"type="number">
+                <button type="roll"value="&amp;{template:fanhunter} {{name=Power1}} {{die=[[@{power_num_1}]]}} {{check=[[@{power_num_1}d6]]}}"name="roll_Power1Check"/>
+            </div>
+            <div class="">
+                <input name="attr_power_2"class="sheet-talent"placeholder="Poder"type="text">
+                <input name="attr_power_num_2"type="number">
+                <button type="roll"value="&amp;{template:fanhunter} {{name=Power2}} {{die=[[@{power_num_2}]]}} {{check=[[@{power_num_2}d6]]}}"name="roll_Power2Check"/>
+            </div>
+            <div class="">
+                <input name="attr_power_3"class="sheet-talent"placeholder="Poder"type="text">
+                <input name="attr_power_num_3"type="number">
+                <button type="roll"value="&amp;{template:fanhunter} {{name=Power3}} {{die=[[@{power_num_3}]]}} {{check=[[@{power_num_3}d6]]}}"name="roll_Power3Check"/>
+            </div>
+            <div class="">
+                <input name="attr_power_4"class="sheet-talent"placeholder="Poder"type="text">
+                <input name="attr_power_num_4"type="number">
+                <button type="roll"value="&amp;{template:fanhunter} {{name=Power4}} {{die=[[@{power_num_4}]]}} {{check=[[@{power_num_4}d6]]}}"name="roll_Power4Check"/>
+            </div>
+            <div class="">
+                <input name="attr_power_5"class="sheet-talent"placeholder="Poder"type="text">
+                <input name="attr_power_num_5"type="number">
+                <button type="roll"value="&amp;{template:fanhunter} {{name=Power5}} {{die=[[@{power_num_5}]]}} {{check=[[@{power_num_5}d6]]}}"name="roll_Power5Check"/>
+            </div>
+            <div class="">
+                <input name="attr_power_6"class="sheet-talent"placeholder="Poder"type="text">
+                <input name="attr_power_num_6"type="number">
+                <button type="roll"value="&amp;{template:fanhunter} {{name=Power6}} {{die=[[@{power_num_6}]]}} {{check=[[@{power_num_6}d6]]}}"name="roll_Power6Check"/>
+            </div>
+        </div>
+        <div class="sheet-col">
+            <div>
+                <label class="upper">Coñas y Taras</label>
+            </div>
+            <div class="sheet-col">
+                <textarea rows="2"cols="55"style="width: 200px;"name="Taras"title="Taras"></textarea>
+            </div>
+        </div>
+        <div class="sheet-col">
+            <div class="sheet-2colrow">
+                <div class="sheet-col">
+                    <label class="upper">Pupas</label>
+                </div>
+                <div class="sheet-col">
+                    <input name="attr_pupa"type="number"class="sheet-talent3">
+                </div>
+            </div>
+            <div class="sheet-2colrow">
+                <div class="sheet-col">
+                    <label class="upper">Potra</label>
+                </div>
+                <div class="sheet-col">
+                    <input name="attr_potra"type="number"class="sheet-talent3">
+                </div>
+            </div>
+            <div class="sheet-2colrow">
+                <div class="sheet-col">
+                    <label class="upper">Pasta</label>
+                </div>
+                <div class="sheet-col">
+                    <input name="attr_money"type="number"class="sheet-talent3">
+                </div>
+            </div>
+            <div class="sheet-2colrow">
+                <div class="sheet-col">
+                    <label class="upper">Exp.</label>
+                </div>
+                <div class="sheet-col">
+                    <input name="attr_exp"type="number"class="sheet-talent3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="sheet-rule">
+
+    <div id="pj" class="sheet-1-2">
+        <div class="colum1">
+            <div class="startl">
+                <label class="upper">Armas</label>
+            </div>
+            <div class="endl">
+                <input name="attr_guns_1"class="sheet-talent2"placeholder="Arma"type="text">
+            </div>
+            <div class="endl">
+                <input name="attr_guns_2"class="sheet-talent2"placeholder="Arma"type="text">
+            </div>
+            <div class="endl">
+                <input name="attr_guns_3"class="sheet-talent2"placeholder="Arma"type="text">
+            </div>
+            <div class="endl">
+                <input name="attr_guns_4"class="sheet-talent2"placeholder="Arma"type="text">
+            </div>
+            <div class="endl">
+                <input name="attr_guns_5"class="sheet-talent2"placeholder="Arma"type="text">
+            </div>
+            <div class="endl">
+                <input name="attr_guns_6"class="sheet-talent2"placeholder="Arma"type="text">
+            </div>
+            <div class="endl">
+                <input name="attr_guns_7"class="sheet-talent2"placeholder="Arma"type="text">
+            </div>
+            <div class="endl">
+                <input name="attr_guns_8"class="sheet-talent2"placeholder="Arma"type="text">
+            </div>
+            <div class="endl">
+                <input name="attr_guns_9"class="sheet-talent2"placeholder="Arma"type="text">
+            </div>
+            <div class="endl">
+                <input name="attr_guns_10"class="sheet-talent2"placeholder="Arma"type="text">
+            </div>
+        </div>
+        <div class="colum2">
+            <div class="sheet-4colrow">
+                <div class="sheet-col">
+                    <div class="startl">
+                        <label class="upper">Al/De</label>
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_de_1"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_de_2"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_de_3"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_de_4"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_de_5"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_de_6"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_de_7"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_de_8"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_de_9"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_de_10"type="number">
+                    </div>
+                </div>
+                <div class="sheet-col">
+                    <div>
+                        <label class="upper">Pu</label>
+                    </div>
+                    <div>
+                        <input name="attr_gun_pu_1"type="number">
+                        <button type="roll"value="&amp;{template:fanhunter} {{name=Gun1}} {{die=[[@{gun_pu_1}]]}} {{check=[[@{gun_pu_1}d6]]}}"name="roll_Gun1Check"/>
+                    </div>
+                    <div>
+                        <input name="attr_gun_pu_2"type="number">
+                        <button type="roll"value="&amp;{template:fanhunter} {{name=Gun2}} {{die=[[@{gun_pu_2}]]}} {{check=[[@{gun_pu_2}d6]]}}"name="roll_Gun2Check"/>
+                    </div>
+                    <div>
+                        <input name="attr_gun_pu_3"type="number">
+                        <button type="roll"value="&amp;{template:fanhunter} {{name=Gun3}} {{die=[[@{gun_pu_3}]]}} {{check=[[@{gun_pu_3}d6]]}}"name="roll_Gun3Check"/>
+                    </div>
+                    <div>
+                        <input name="attr_gun_pu_4"type="number">
+                        <button type="roll"value="&amp;{template:fanhunter} {{name=Gun4}} {{die=[[@{gun_pu_4}]]}} {{check=[[@{gun_pu_4}d6]]}}"name="roll_Gun4Check"/>
+                    </div>
+                    <div>
+                        <input name="attr_gun_pu_5"type="number">
+                        <button type="roll"value="&amp;{template:fanhunter} {{name=Gun5}} {{die=[[@{gun_pu_5}]]}} {{check=[[@{gun_pu_5}d6]]}}"name="roll_Gun5Check"/>
+                    </div>
+                    <div>
+                        <input name="attr_gun_pu_6"type="number">
+                        <button type="roll"value="&amp;{template:fanhunter} {{name=Gun6}} {{die=[[@{gun_pu_6}]]}} {{check=[[@{gun_pu_6}d6]]}}"name="roll_Gun6Check"/>
+                    </div>
+                    <div>
+                        <input name="attr_gun_pu_7"type="number">
+                        <button type="roll"value="&amp;{template:fanhunter} {{name=Gun7}} {{die=[[@{gun_pu_7}]]}} {{check=[[@{gun_pu_7}d6]]}}"name="roll_Gun7Check"/>
+                    </div>
+                    <div>
+                        <input name="attr_gun_pu_8"type="number">
+                        <button type="roll"value="&amp;{template:fanhunter} {{name=Gun8}} {{die=[[@{gun_pu_8}]]}} {{check=[[@{gun_pu_8}d6]]}}"name="roll_Gun8Check"/>
+                    </div>
+                    <div>
+                        <input name="attr_gun_pu_9"type="number">
+                        <button type="roll"value="&amp;{template:fanhunter} {{name=Gun9}} {{die=[[@{gun_pu_9}]]}} {{check=[[@{gun_pu_9}d6]]}}"name="roll_Gun9Check"/>
+                    </div>
+                    <div>
+                        <input name="attr_gun_pu_10"type="number">
+                        <button type="roll"value="&amp;{template:fanhunter} {{name=Gun10}} {{die=[[@{gun_pu_10}]]}} {{check=[[@{gun_pu_10}d6]]}}"name="roll_Gun10Check"/>
+                    </div>
+                </div>
+                <div class="sheet-col">
+                    <div class="startl">
+                        <label class="upper">Cf</label>
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cf_1"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cf_2"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cf_3"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cf_4"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cf_5"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cf_6"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cf_7"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cf_8"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cf_9"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cf_10"type="number">
+                    </div>
+                </div>
+                <div class="sheet-col">
+                    <div class="startl">
+                        <label class="upper">Cr</label>
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cr_1"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cr_2"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cr_3"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cr_4"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cr_5"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cr_6"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cr_7"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cr_8"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cr_9"type="number">
+                    </div>
+                    <div class="endl">
+                        <input name="attr_gun_cr_10"type="number">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="sheet-rule">
+
+    <div class="sheet-row">
+        <div class="startl">
+            <label class="upper">Equipo</label>
+        </div>
+        <textarea rows="2"cols="55"style="width: 600px;"name="Equipo"title="Equipo"></textarea>
+    </div>
+    <div class="sheet-row fin"></div>
+</div>
